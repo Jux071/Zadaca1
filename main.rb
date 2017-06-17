@@ -8,7 +8,7 @@ phone4 = Phone.new('Siemens M55', 32, 0, memory: '120mb', ram: '64mb', camera: '
 phone5 = Phone.new('Samsung Galaxy S4', 399, 1, memory: '16gb', ram: '1gb', camera: '8mp', bluetooth: true, os: 'android')
 niz = [phone1, phone2, phone3, phone4, phone5]
 
-count_in_stock = niz.select { |p|	p.model if p.in_stock > 0 }
+count_in_stock = niz.select { |p| p.model if p.in_stock > 0 }
 store1 = Store.new('Univerzalno.ba', 'Milana Preloga 12', 'www.univerzalno.ba', niz.length)
 puts store1
 print 'Total Phones in stock: ' 
