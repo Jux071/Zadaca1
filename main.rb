@@ -27,19 +27,19 @@ puts cheap_phones.length
 puts '===================================='
 puts cheap_phones
 
-out_of_stock_phones = niz.select { |p|	p.model if p.in_stock == 0 }
+out_of_stock_phones = niz.select { |p| p.model if p.in_stock == 0 }
 print 'Out of Stock: '
 puts out_of_stock_phones.length
 puts '===================================='
 puts out_of_stock_phones
 
-android_phones = niz.select { |p|	p.model if p.specs.has_value?('android') }
+android_phones = niz.select { |p| p.model if p.specs.has_value?('android') }
 print 'Phones with Android OS: '
 puts android_phones.length
 puts '===================================='
 puts android_phones
 
-bluetooth_phones = niz.select { |p|	p.model if p.specs.has_value?(true) }
+bluetooth_phones = niz.select { |p| p.model if p.specs.has_value?(true) }
 print 'Phones with Bluetooth: '
 puts bluetooth_phones.length
 puts '===================================='
