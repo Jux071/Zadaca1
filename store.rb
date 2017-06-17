@@ -9,6 +9,6 @@ class Store
 	end
 	
 	def to_s
-		"Name: #{name} \nStreet: #{street} \nWebsite: #{website} \nTotal Phones: #{phones}"		
+		"************************************\nName: #{name} \nStreet: #{street} \nWebsite: #{website} \nTotal Phones: #{phones}"	
 	end
 end

@@ -9,11 +9,8 @@ class Phone < Product
   end 
 
   def to_s
-   specs.each do |k, v| print k, ": ", v, "\n"  	
-  end 
-
-  "#{super.to_s} #{specs}"   
-end
+  	new_specs = specs.map { |k, v|"#{k}: #{v}" }
+  	"#{super.to_s}Specs: \n        #{new_specs.map(&:inspect).join("\n        ").to_s.gsub('"', '')}\n------------------------------------"
+  end
 
 end
-

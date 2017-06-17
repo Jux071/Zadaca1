@@ -8,7 +8,7 @@ class Product
   end
 
   def to_s
-    "Model: #{model} \nPrice: #{price} \n#{in_stock} \n"
+    "Model: #{model} \nPrice: #{price} $\n"
   end
   
 end
