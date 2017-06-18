@@ -18,7 +18,7 @@ def display_store_info(phones)
 end
 
 def display_expensive_phones(phones)
-	expensive_phones = phones.select { |p| p.model if p.price >= 899 } 
+  expensive_phones = phones.select { |p| p.model if p.price >= 899 } 
   print 'Expensive Phones: ' 
   puts expensive_phones.length
   puts '===================================='
@@ -26,7 +26,7 @@ def display_expensive_phones(phones)
 end
 
 def display_cheap_phones(phones)
-	cheap_phones = phones.select { |p| p.model if p.price < 400 }
+  cheap_phones = phones.select { |p| p.model if p.price < 400 }
   print 'Cheap Phones: '
   puts cheap_phones.length
   puts '===================================='
@@ -34,7 +34,7 @@ def display_cheap_phones(phones)
 end
 
 def display_out_of_stock_phones(phones)
-	out_of_stock_phones = phones.select { |p| p.model if p.in_stock == 0 }
+  out_of_stock_phones = phones.select { |p| p.model if p.in_stock == 0 }
   print 'Out of Stock: '
   puts out_of_stock_phones.length
   puts '===================================='
@@ -42,7 +42,7 @@ def display_out_of_stock_phones(phones)
 end
 
 def display_android_phones(phones)
-	android_phones = phones.select { |p| p.model if p.specs.has_value?('android') }
+  android_phones = phones.select { |p| p.model if p.specs.has_value?('android') }
   print 'Phones with Android OS: '
   puts android_phones.length
   puts '===================================='
@@ -50,7 +50,7 @@ def display_android_phones(phones)
 end
 
 def display_phones_with_bluetooth(phones)
-	bluetooth_phones = phones.select { |p| p.model if p.specs.has_value?(true) }
+  bluetooth_phones = phones.select { |p| p.model if p.specs.has_value?(true) }
   print 'Phones with Bluetooth: '
   puts bluetooth_phones.length
   puts '===================================='
