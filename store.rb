@@ -11,4 +11,5 @@ class Store
 	def to_s
 		"************************************\nName: #{name} \nStreet: #{street} \nWebsite: #{website} \nTotal Phones: #{phones}"	
 	end
+	
 end
